@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="lycwed-cordova-plugin-admob-applovin" version="1.0.0"
-    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+<plugin id="lycwed-cordova-plugin-admob-applovin" version="1.0.1" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <name>lycwed-cordova-plugin-admob-applovin</name>
@@ -11,15 +11,13 @@
     </engines>
 
     <platform name="android">
-        <framework src="com.applovin:applovin-sdk:7.7.0" />
-        <framework src="com.google.ads.mediation:applovin:7.7.0.0" />
+        <framework src="com.applovin:applovin-sdk:8.1.3" />
+        <framework src="com.google.ads.mediation:applovin:8.1.3.0" />
 
         <config-file parent="/manifest/application" target="AndroidManifest.xml">
-            <activity android:name="com.applovin.adview.AppLovinInterstitialActivity"
-                android:configChanges="orientation|screenSize"/>
+            <activity android:name="com.applovin.adview.AppLovinInterstitialActivity" android:configChanges="orientation|screenSize"/>
 
-            <activity android:name="com.applovin.adview.AppLovinConfirmationActivity"
-                android:configChanges="orientation|screenSize"/>
+            <activity android:name="com.applovin.adview.AppLovinConfirmationActivity" android:configChanges="orientation|screenSize"/>
         </config-file>
 
         <!-- Prevents compilation error: https://developer.android.com/studio/build/multidex.html -->
